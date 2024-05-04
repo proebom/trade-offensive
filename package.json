@@ -12,6 +12,8 @@
     "lint:fix": "next lint --fix",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
+    "all-lint": "pnpm lint && pnpm prettier:check",
+    "all-lint:go": "pnpm lint:fix && pnpm prettier:write",
     "start": "next start"
   },
   "dependencies": {
