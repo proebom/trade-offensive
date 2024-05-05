@@ -36,4 +36,6 @@ jobs:
         run: pnpm install
 
       - name: Run Lint
+        env:
+          DATABASE_URL: postgresql://username:password@localhost:5432/mydb
         run: pnpm all-lint
